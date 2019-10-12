@@ -1,0 +1,249 @@
+body{
+    font-family: 'Lobster', cursive !important;
+}
+small{
+    color: white;
+}
+.info{
+    background: white;
+
+}
+.primary-color{
+    color: #FF9800;
+}
+.info a{
+    transition: color 0.5s ease-in-out;
+}
+.info a:hover{
+    color: #242424;
+}
+/*header*/
+#header{
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/food.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.height-90{
+    min-height: calc(100vh - 94px)
+}
+.banner h1{
+    border-top: 6px dotted #c9c1ac; 
+    border-bottom: 6px dotted #c9c1ac; 
+    animation: banner 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes banner{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(30px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn.main-btn {
+    color: white;
+    font-size: 2rem;
+    transition: all 1s ease-in-out;
+    border: 2px solid;
+}
+.main-btn:hover{
+    color: #242424;
+    background: white;
+}
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #c9c1ac;
+    border-radius:10px;
+    transition: all 2s ease; 
+   
+}
+.header-link{
+    color: #242424;
+    animation: downBtn 4s infinite;
+}
+@keyframes downBtn{
+    0% {
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+/* navbar */
+.navbar-brand{
+    font-size: 40px !important;
+}
+.navbar-background{
+    background: white;
+    padding: 5px 20px;
+    box-shadow: 2px 2px 2px 1px;
+}
+.nav-link{
+    color:#242424;
+    font-size: 20px;
+}
+.toggler-btn{
+    border: 2px solid #FF9800;
+    padding: 5px;
+    transition: all 2s ease;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background:#FF9800;
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-5px,8px);
+}
+/* end navbar */
+/* menu item */
+.item-container{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0,));
+    transition: all 2 ease;
+}
+.item-img{
+    transition: all 2s ease;
+    width: 280px !important;
+    height: 190px !important;
+} 
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.7;
+} 
+.item-link{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-size: 2rem;
+    border-top: 3px solid #242424;
+    border-bottom: 3px solid #242424;
+    color:black ;
+    opacity: 0;
+    transition: all 2s ease;
+}
+.item-container:hover .item-link{
+    opacity: 1;
+}
+.item-container:hover{
+    outline: 10px solid #FF9800;
+    outline-offset: -1.8rem;
+}
+/* end menu item */
+
+/* special */
+.special{
+    border:3px solid #FF9800;
+    position: relative;
+} 
+.special-text{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: #FF9800;
+    padding: 0 10px;
+}
+/* end special */
+/* about */
+.btn.main-btn-about{
+    color: #FF9800;
+    font-size: 2rem;
+    border: 2px solid;
+}
+.about-pictures{
+    position: relative;
+}
+.about-image{
+     position: absolute; 
+    width: 150px;
+    transition: all 2s ease;
+    opacity: 0.9 ;
+}
+.img-1{
+    left: 0%;
+    top: 0%;
+}
+.img-2{
+    left: 20%;
+    top: 20%;
+    z-index: 10;
+}
+.img-3{
+    left: 40%;
+    top: 45%;
+    z-index: 20;
+}
+.img-4{
+    left: 40%;
+    top: 0%;
+    
+}
+.img-5{
+    left: 0%;
+    top: 45%;
+    z-index: 10;
+}
+.about-image:hover{
+    /* outline:10px solid #FF9800;
+    outline-offset: 0.8rem; */
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+/* .about-pictures:hover .about-image:not(:hover){
+    opacity: 0.5;
+} */
+
+/* end about */
+/* review */
+.review-item{
+    background:rgb(0,0,0);
+    clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%);
+}
+.img-name{
+    width: 150px;
+    height: 120px;
+  
+}
+/* end review */
+
+/* contact */
+.height-60{
+    min-height: 57vh;
+}
+#contact .card input::placeholder{
+    color:#FF9800;
+}
+/* end contact */
+
+#back-to-top{
+    background: #c9c1ac;
+    border-radius:10px;
+    display: inline-block; 
+}
